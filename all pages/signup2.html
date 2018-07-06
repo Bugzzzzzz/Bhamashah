@@ -1,0 +1,294 @@
+<html>
+<head> <title> SIGN UP </title> 
+<style>
+h1{
+color:white;
+}
+body{
+color:white;
+}
+div.background {
+  background:url("4.jpg");
+  border: 2px solid black;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+                
+                /* Full-width input fields */
+                input[type=text], input[type=password] , input[type=number] , textarea , input[type=email] {
+                    width: 50%;
+                    background-color:transparent;
+                   
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: none;
+                    border-bottom: 2px solid orange;
+                    box-sizing: border-box;
+                    -webkit-transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
+                    overflow:auto;
+                }
+            input[type=text]:focus,input[type=password]:focus,input[type=number]:focus{
+                width: 100%; 
+				height:30px;
+            }
+            
+            
+            /* Set a style for all buttons */
+            button {
+                background-color: orange;
+                color: white;
+                padding: 5px 5px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 50%;
+            }
+            
+            button:hover {
+                opacity: 0.7;
+            }
+            
+            /* Extra styles for the cancel button */
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: black;
+            }
+            
+            
+            
+            /* Center the image and position the close button */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+            
+            img.avatar {
+                width: 40%;
+                border-radius: 100%;
+            }
+            
+            .container {
+                padding: 5px;
+            }
+            
+            span.psw {
+                float: right;
+                padding-top: 5px;
+            }
+            
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+                
+            }
+            
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+            }
+            
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: #000;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+            
+            /* Add Zoom Animation */
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+            
+            @-webkit-keyframes animatezoom {
+                from {-webkit-transform: scale(0)}
+                to {-webkit-transform: scale(1)}
+            }
+            
+            @keyframes animatezoom {
+                from {transform: scale(0)}
+                to {transform: scale(1)}
+            }
+            
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+                .cancelbtn {
+                    width: 100%;
+                }
+            }
+div.transbox {
+  margin: 100px;
+  background-color:#000000;
+  border: 1px solid black;
+  height:1000px;
+  opacity: 0.8;
+  filter: alpha(opacity=60); 
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+<script>
+function validateemail(uemail)
+{
+	if(
+	(uemail.indexOf("@") < 2)
+	||
+	(uemail.indexOf("@") != (uemail.lastIndexOf("@")))
+	)
+	{
+		alert("Invalid email");
+	}
+}
+</script>
+</head>
+<body>
+<div class="background">
+  <div class="transbox">
+<div id="regi">
+<form name="frmregister" onsubmit="return validatefn()" action="" ><br/><br/><br/>
+<h2><b><b><u>College Details</u></b></b></h2>
+GRADUATION DATE:
+<select name="seldd">
+<script>
+for(i=1;i<32;i++)
+{
+	document.write("<option>" + i + "</option>");
+}
+</script><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
+</select>
+/
+<select name="selmm">
+<script>
+var mon = [];
+mon[0] = "Jan";
+mon[1] = "Feb";
+mon[2] = "Mar";
+mon[3] = "Apr";
+mon[4] = "May";
+mon[5] = "Jun";
+mon[6] = "Jul";
+mon[7] = "Aug";
+mon[8] = "Sept";
+mon[9] = "Oct";
+mon[10] = "Nov";
+mon[11] = "Dec";
+for(i=0;i<12;i++)
+{
+	document.write("<option>" + mon[i] + "</option>");
+}
+</script><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sept</option><option>Oct</option><option>Nov</option><option>Dec</option>
+</select>
+/
+<select name="selyear">
+<script>
+var dt = new Date();
+for(i=dt.getFullYear();i>=1950;i--)
+{
+	document.write("<option>" + i + "</option>");
+}
+</script><option>2018</option><option>2017</option><option>2016</option><option>2015</option><option>2014</option><option>2013</option><option>2012</option><option>2011</option><option>2010</option><option>2009</option><option>2008</option><option>2007</option><option>2006</option><option>2005</option><option>2004</option><option>2003</option><option>2002</option><option>2001</option><option>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option><option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option><option>1989</option><option>1988</option><option>1987</option><option>1986</option><option>1985</option><option>1984</option><option>1983</option><option>1982</option><option>1981</option><option>1980</option><option>1979</option><option>1978</option><option>1977</option><option>1976</option><option>1975</option><option>1974</option><option>1973</option><option>1972</option><option>1971</option><option>1970</option><option>1969</option><option>1968</option><option>1967</option><option>1966</option><option>1965</option><option>1964</option><option>1963</option><option>1962</option><option>1961</option><option>1960</option><option>1959</option><option>1958</option><option>1957</option><option>1956</option><option>1955</option><option>1954</option><option>1953</option><option>1952</option><option>1951</option><option>1950</option>
+</select><br/><br/>
+EDUCATION:<br/>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <select name="seledu">
+<option selected>&nbsp &nbsp &nbsp &nbsp &nbsp Select Stream &nbsp &nbsp &nbsp </option><br/>
+<option>B.tech</option><br/>
+<option>M.tech</option><br/>
+<option>MBA</option><br/>
+<option>DIPLOMA</option><br/>
+<option>M.Sc</option><br/>
+</select><br/><br/>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <select name="seledu">
+<option selected>&nbsp &nbsp &nbsp &nbsp &nbsp Select branch </option><br/>
+<option>Mechanical</option><br/>
+<option>Electrical</option><br/>
+<option>Civil</option><br/>
+<option>ETC</option><br/>
+<option>Computer science </option><br/>
+<option>Information Technology </option><br/>
+<option>AEI</option><br/>
+<option>Chemical</option><br/>
+<option>Marine</option><br/>
+</select><br/><br/>
+YEAR:
+<input type="radio" name="rdyr"/> First year
+<input type="radio" name="rdyr" checked/> Second year
+<br/>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="rdyr"/>Third year
+<input type="radio" name="rdyr"/>Fourth year<br/><br/>
+SEMESTER:
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <select name="seldd">
+<Script>
+for(i=1;i<9;i++)
+{
+	document.write("<option>" + i + "</option>");
+}
+</script>
+</select>
+<br/><br/>
+STUDENT TYPE:
+<input type="radio" name="chkedu" checked/>Regular
+<input type="radio" name="chkedu"/>Lateral<br/><br/>
+COLLEGE ROLL No:
+<input type="number" name="txnregi" placeholder="Enter college roll no." required /><br/>
+OPAC ID:
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="number" name="txnregi" placeholder="ENTER OPAC ID" required /><br/>
+Email:
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="email" name="txeemail" placeholder="Enter email id" required="" onblur="validateemail(this.value)"><br/>
+NATIONALITY: 
+&nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" name="txtname" id="txtname" 
+maxlength="12" placeholder="Enter Nationality" required onblur="validateuname();"/>
+<div id="errormsg"/><br/>
+STATE:
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" name="txtname" id="txtname" 
+maxlength="30" placeholder="Enter State" required onblur="validateuname();"/>
+<div id="errormsg"/><br/>
+USERNAME:
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="txtname" id="txtname" 
+maxlength="30" placeholder="Enter username" required onblur="validateuname();"/>
+<div id="errormsg"/><br/>
+Password:
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="password" id="txtpass" placeholder="Enter Password" required=""><br/>
+Confirm Password:
+&nbsp &nbsp <input type="password" id="txtpass" placeholder="Confirm Password" required=""><br/>
+<th nowrap=""> Upload Photo </th> 
+<input type="File" name="fiupload"><br/>
+<br/> 
+<input align="center" type="submit" value="Sign Up"/>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input align="center" type="reset" value="Clear"/>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

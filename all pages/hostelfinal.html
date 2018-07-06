@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <style>
+				
+				.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 60%;
+  align:right;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  align:right;
+}
+				
+body{
+color:black;
+}
+
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+                
+                /* Full-width input fields */
+                input[type=text], input[type=password], input[type=number],select ,checkbox{
+                    background-color:transparent;
+                    display: inline-block;
+                    border: none;
+                    border-bottom: 2px solid aqua;
+                    box-sizing: border-box;
+                    -webkit-transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
+                    overflow:auto;
+                }
+            input[type=text]:focus,input[type=password]:focus,input[type=number]:focus,select:focus,checkbox:focus{
+                width: 100%;
+				height:30px;
+            }
+            
+#g
+{
+  float:center
+  height:600px;
+  width:1050px;
+  border:5px;
+  
+  background-color:#FFB74D;
+  }
+  #mydiv1,#mydiv2
+  {
+  height:350px;
+  width:1050px;
+  align:center;
+  float:center
+  border:5px;
+  background-color:#FFB74D;
+  }
+  #btn1,#btn2
+  {
+    height:60px;
+	width:1050px;
+	background-color:#E65100;
+	outline:5px;
+  }
+				
+				
+				
+				.navdiv{
+    float:right;
+	}
+.accordion {
+    background-color:#FFB74D;
+    color: #444;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color:#FFB74D;
+}
+
+.panel {
+    padding: 0 ;
+    background-color:#FFB74D;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+				
+				
+				
+				
+				
+				
+                    .navbar {
+                        overflow: hidden;
+                        background-color: #333;
+                        font-family: Arial, Helvetica, sans-serif;
+                        float:right;
+                        width:100%;
+                    }
+                
+                .navbar a {
+                    float: left;
+                    font-size: 16px;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                
+                .dropdown {
+                    float: left;
+                    overflow: hidden;
+                }
+                
+                .dropdown .dropbtn {
+                    font-size: 16px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    padding: 10px 10px;
+                    background-color: inherit;
+                    font-family: inherit;
+                    margin: 0;
+                }
+                
+                .navbar a:hover, .dropdown:hover .dropbtn {
+                    background-color: rgb(241,129,58);
+                }
+                
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                }
+                
+                .dropdown-content a {
+                    float: none;
+                    color: black;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                
+                .dropdown-content a:hover, button:hover{
+                    background-color: #ddd;
+                }
+                
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+                button {
+                    background-color: orange;
+                    color: white;
+                 
+                    cursor: pointer;
+                }
+                
+                
+                
+                
+                
+                
+                form.example input[type=text] {
+                    background-color:transparent;
+                    padding: 10px 10px;
+                    display: inline-block;
+                    border: none;
+                    border-bottom:2px solid rgb(241,129,28);
+                    font-size: 17px;
+                    float: left;
+                    width: 50%;
+                    background-color: inherit;
+                }
+                
+                form.example button {
+                    float: left;
+                    width: 20%;
+                     padding: 10px 10px;
+                    background: inherit;
+                    color: white;
+                    font-size: 20px;
+                    border: none;
+                    cursor: pointer;
+                }
+                
+                form.example button:hover {
+                    background: rgb(241,129,58);
+                }
+                
+                form.example::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                
+                
+                
+                .imgcontainer {
+                    float:left;
+                }
+                
+                img.avatar {
+                    width: 45%;
+                    border-radius: 100%;
+                }
+    
+    
+    
+    
+    
+    
+    header {
+        align-items: center;
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        transform-style: preserve-3d;
+        perspective: 100px;
+    }
+                
+                header:before {
+                    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)),
+                    background-size: cover;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+                
+                header:after {
+                    background: #F9FCFF;
+                    content: "";
+                    left: -5%;
+                    position: absolute;
+                    right: -5%;
+                    top: 90%;
+                    transform-origin: 0 0;
+                    transform: rotateZ(-4deg);
+                    z-index: 0;
+                }
+                
+                .header-title, .header-subtitle {
+                    color: black;
+                }
+                
+                
+                .animate-pop-in {
+                    animation: pop-in .6s ease-out forwards;
+                    opacity: 0;
+                }
+                
+                .rocky-dashed {
+                    animation-delay: .6s;
+                }
+                
+                .header-title {
+                    animation-delay: .8s;
+                }
+                
+                
+                /* Animations */
+                
+                @keyframes pop-in {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(-4rem) scale(.8);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: none;
+                    }
+                }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                
+                
+               
+        </style>
+    </head>
+    <body style="background-color:#FFB74D">
+	
+	 <div>
+        <div class="imgcontainer" style="position:absolute;">
+            <img src="Avatar.jpeg" alt="Avatar" class="avatar">
+        </div>
+        
+        <div align="right" style="background-color:#FFB74D;width:100%;height:25%;float:right;">
+        
+        <header>
+            <section class="header-content">
+                    <h1 class="header-title animate-pop-in"><b>Student Welfare Portal</b></h1>
+        </header>
+        
+        
+        
+        </div>
+        <div class="navbar">
+            <div>
+               <a href="mainpage.html">
+                <button style="font-size: 10px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    background-color: inherit;
+                    font-family: inherit;
+                    margin: 0;"><i style="font-size:20px" class="fa">&#xf015;</i></button>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="collegefinal1.html" style="color:white">College</a></button>
+                <div class="dropdown-content">
+                    <a href="collegefinal1.html">Tution Fees</a>
+                    <a href="collegefinal1.html">SSEPL Fees</a>
+                    <a href="collegefinal1.html">Society Fees</a>
+                    <a href="collegefinal1.html">Transportation Fees</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="hostelfinal.html" style="color:white">Hostel</a></button>
+                <div class="dropdown-content">
+                    <a href="hostelfinal.html">Accomodation Fees</a>
+                    <a href="hostelfinal.html">Fine</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="regdpagef.html" style="color:white">Registration</a></button>
+                <div class="dropdown-content">
+                    <a href="regdpagef.html">Semester Registration</a>
+                    <a href="regdpagef.html">Back Paper Registratio</a>
+                    <a href="regdpagef.html">Debard Registration</a>
+                    <a href="regdpagef.html">Rechecking</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn"><a href="miscel.html" style="color:white">Miscellaneous Fees</a></button>
+                <div class="dropdown-content">
+                    <a href="miscel.html">Ambulance</a>
+                    <a href="miscel.html">Lab Manual</a>
+                    <a href="miscel.html">Library Fine</a>
+                </div>
+            </div>
+        
+        <div class="dropdown" style="float:right;margin-right:2%;">
+            <button class="dropbtn" style="padding: 10px 10px;"><i class="fa fa-user-circle-o" style="font-size:20px;"></i></button>
+            <div class="dropdown-content" style="right:0;">
+                <form>
+                    <a href="profile page.html" style="font-size:15px;">My Profile</a>
+                    <a href="index.html" style="font-size:15px;">Log Out</a>
+                    </div>
+               </form>
+            </div>
+
+
+        <div class="dropdown" style="float:right;">
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                    <button type="submit" style="padding: 10px 10px;"><i class="fa fa-search" style="font-size:20px;"></i></button>
+            </form>
+            </div>
+
+        </div>
+		
+		<div class="navdiv" style="background-color:#FFB74D">
+<h1> &#8739 Related Navigation</h1>
+<button class="accordion">&#9656 <a href="#">College fees</a></button>
+<div class="panel">
+<ul>
+<li><a href="collegefinal1.html">Tution fees</a></li>
+<li><a href="collegefinal1.html">Ssepl fees</a></li>
+<li><a href="collegefinal1.html">Society fees</a></li>
+<li><a href="collegefinal1.html">Transportation fees</a></li>
+</ul>
+</div>
+
+<button class="accordion">&#9656 <a href="#">Hostel fees</a></button>
+<div class="panel">
+  <ul>
+<li><a href="hostelfinal.html">Accomodation fees</a></li>
+<li><a href="hostelfinal.html">Fine</a></li>
+</ul>
+</div>
+
+<button class="accordion">&#9656 <a href="#"> Registration fees</a></button>
+<div class="panel">
+ <ul>
+<li><a href="regdpagef.html">Regular Semester Registration</a></li>
+<li><a href="regdpagef.html">Back Registration</a></li>
+<li><a href="regdpagef.html">Debarred Registration</a></li>
+<li><a href="regdpagef.html">Rechecking</a></li>
+</ul>
+</div>
+
+<button class="accordion"> &#9656 <a href="#">Miscellaneous fees</a></button>
+<div class="panel">
+ <ul>
+<li><a href="miscel.html">Ambulance</a></li>
+<li><a href="miscel.html">Lab Manuals</a></li>
+<li><a href="miscel.html">Library Fees</a></li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+            $("#panel li").click( function() { 
+              $("#panel li").css("color", "#d49a9a");
+              $(this).css("color", "#c2c0c0");
+            });
+            </script>
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+		
+		
+		<script src="jquery-3.3.1.js"></script>
+<script>
+
+$(document).ready(function()
+{
+
+$("#btn1").click(function()
+{
+$("#mydiv2").slideUp("slow",function(){
+
+$("#mydiv1").slideDown(1000,function(){
+});
+});
+});
+
+$("#btn2").click(function()
+{
+$("#mydiv1").slideUp("slow",function(){
+$("#mydiv2").slideDown(1000,function(){
+  });
+});
+});
+});
+
+</script>
+
+ <div id="g">
+<div id="n"><CENTER>
+WELCOME TO HOSTEL PAGE</CENTER></DIV>
+<center><button id="btn1"><h3 STYLE="color:white">&nbsp  ACCOMODATION PAYMENT<a href="#r1"></a></button>
+
+<div id="mydiv1" style="display:none">
+
+<form onsubmit="return validatename()">
+<h1><CENTER><b><u> ACCOMODATION PAYMENT</u></b></h1>
+
+TYPE OF PAYMENT:<input type="radio" name="chkedu" required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;"  /> Pay full fees
+		<input type="radio" name="chkedu" required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;"  /> Pay in installments<BR><BR/>
+HOSTEL TYPE:<select name="selhostel" required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;" >
+		<option> Old boys hostel </option>
+		<option> New boys hostel </option>
+		<option> Boys apartment </option>
+		<option> New girls hostel </option>
+		</select><BR/><BR/>
+TOTAL AMOUNT:<SELECT required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;"  placeholder="Amount to be paid"><br/><br/>
+<option>&#8377 65000</option>
+</select><BR><BR>
+AMOUNT DUE:<SELECT required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;"  placeholder="Amount to be paid"><br/><br/>
+<option>&#8377 65000</option>
+</select><BR><BR>
+AMOUNT PAID:<SELECT required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;"  placeholder="Amount to be paid"><br/><br/>
+<option>&#8377 0</option>
+</select><BR><BR>
+AMOUNT BEING PAID:<INPUT type="number" name="txtnum4" placeholder="Amount being paid" required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;" >	
+<br/><br>
+<CENTER>
+<input type="submit" value="PAYMENT" style="background-color:black;color:white;border:none;height:20px;width:200px">
+</CENTER>
+</form>
+</div>
+<button id="btn2" href="#backrg"><CENTER><h3 STYLE="color:white">&nbsp &nbsp &nbsp &nbsp FINE &nbsp</h3><a href="#"></a></CENTER></button>
+<div id="mydiv2">
+<form  onsubmit="return validatename()">
+<h1><CENTER><b><u>FINE</u></b></CENTER></h1>
+TOTAL FINE:<SELECT required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;"  placeholder="Amount to be paid">
+<option>&#8377 500</option>
+</select><BR><BR>
+FINE DUE:<SELECT required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;"  placeholder="Amount to be paid">
+<option>&#8377 500</option>
+</select><BR><BR>
+FINE PAID:<SELECT required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;"  placeholder="Amount to be paid">
+<option>&#8377 0</option>
+</select>
+<br/><br/>
+
+FINE BEING PAID:<INPUT type="number" name="txtnum4" placeholder="Amount being paid" required style="border:none;border-bottom:2px solid black;background-color:inherit;color:black;" ></input>
+
+<br/><br/>
+<CENTER>
+<input type="submit" value="PAYMENT" style="background-color:black;color:white;border:none;height:20px;width:200px">
+</CENTER>
+
+</form>
+</div>
+
+</div>
+
+
+<DIV style="background-color:black;margin-bottom:0;height:100px">
+<a style="float:right" href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a style="float:right" href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a style="float:right" href="https://www.google.com" class="fa fa-google"></a>
+<a style="float:right" href="https://www.youtube.com" class="fa fa-youtube"></a>
+<a style="float:right" href="https://www.instagram.com" class="fa fa-instagram"></a>
+<br/><p><b><center><a style="color:white" href="aboutnew.html"><H4>ABOUT US</a> &nbsp &nbsp  &nbsp <a  style="color:white"  href="CONTACT.html">CONTACT US</a> &nbsp  &nbsp &nbsp <a  style="color:white" href="feedbackf.html">RATE US</H4></a> </b></center></p>
+</DIV>
+		
+    </body>
+</html>
+
+
+
+
+

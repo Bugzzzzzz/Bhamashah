@@ -1,0 +1,65 @@
+<html>
+<head> <title> feedback </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<!-- <link rel="netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);"> -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+h1{
+color:white;
+}
+body{
+color:white;
+}
+p{
+color:white;
+}
+div.background {
+  background:url("2.jpg");
+  <!-- background-size:cover; -->
+  <!-- background-position:center; -->
+  border: 2px solid black;
+}
+div.transbox {
+  margin: 100px;
+  background-color:#000000;
+   border: 1px solid black;
+  height:1000px;
+  opacity: 0.9;
+  filter: alpha(opacity=60); 
+}
+
+div.transbox p {
+   margin: 5%; 
+  font-weight: bold;
+</style>	  
+</head>
+<body>
+<div class="background">
+         <div class="transbox">
+             <div id="regi">
+<form >
+<h1 align="center"><b><u>Rate Us:</u></b></h1>
+<font size="5">
+Name: <input class="w3-input w3-animate-input" type="text" style="width:135px"><br>
+<!-- <input class="w3-input w3-animate-input" type="text" style="width:20%"> -->
+<!-- <input type="text" id="txtname" placeholder="Enter your name" style="border:none;border-bottom:4px solid black;font-color:white;"required> -->
+</br>
+Rating:
+
+ <input type="radio" name="rdrate"/>bad
+&nbsp &nbsp<input type="radio" name="rdrate"/>average
+&nbsp &nbsp<input type="radio" name="rdrate"/>good
+&nbsp &nbsp<input type="radio" name="rdrate"/>very good
+&nbsp &nbsp <input type="radio" name="rdrate"/>excellent
+</br>
+</br>
+Feedback:<textarea name="txtaddr" rows="3" cols="40" placeholder="give your feedback"></textarea>
+</br>
+</br>
+<CENTER>
+<input type="submit" value="send" style="background-color:black;color:white;border:none;">
+</CENTER>
+</form>
+</font>
+</body>
+</html>

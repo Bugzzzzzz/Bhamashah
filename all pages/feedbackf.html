@@ -1,0 +1,360 @@
+<html>
+<head> <title> feedback</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+<style>
+
+                    .navbar {
+                        overflow: hidden;
+                        background-color: #333;
+                        font-family: Arial, Helvetica, sans-serif;
+                        float:right;
+                        width:100%;
+                    }
+                
+                .navbar a {
+                    float: left;
+                    font-size: 16px;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                
+                .dropdown {
+                    float: left;
+                    overflow: hidden;
+                }
+                
+                .dropdown .dropbtn {
+                    font-size: 16px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    padding: 10px 10px;
+                    background-color: inherit;
+                    font-family: inherit;
+                    margin: 0;
+                }
+                
+                .navbar a:hover, .dropdown:hover .dropbtn {
+                    background-color: rgb(241,129,58);
+                }
+                
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                }
+                
+                .dropdown-content a {
+                    float: none;
+                    color: black;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                
+                .dropdown-content a:hover, button:hover{
+                    background-color: #ddd;
+                }
+                
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+                button {
+                    background-color: orange;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+                
+                
+                
+                
+                
+                
+                form.example input[type=text] {
+                    background-color:transparent;
+                    padding: 10px 10px;
+                    display: inline-block;
+                    border: none;
+                    border-bottom:2px solid rgb(241,129,28);
+                    font-size: 17px;
+                    float: left;
+                    width: 50%;
+                    background-color: inherit;
+                }
+                
+                form.example button {
+                    float: left;
+                    width: 20%;
+                     padding: 10px 10px;
+                    background: inherit;
+                    color: white;
+                    font-size: 20px;
+                    border: none;
+                    cursor: pointer;
+                }
+                
+                form.example button:hover {
+                    background: rgb(241,129,58);
+                }
+                
+                form.example::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                
+                
+                
+                .imgcontainer {
+                    float:left;
+                }
+                
+                img.avatar {
+                    width: 45%;
+                    border-radius: 100%;
+                }
+    
+    
+    
+    
+    
+    
+    header {
+        align-items: center;
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        transform-style: preserve-3d;
+        perspective: 100px;
+    }
+                
+                header:before {
+                    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)),
+                    background-size: cover;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+                
+                header:after {
+                    background: #F9FCFF;
+                    content: "";
+                    left: -5%;
+                    position: absolute;
+                    right: -5%;
+                    top: 90%;
+                    transform-origin: 0 0;
+                    transform: rotateZ(-4deg);
+                    z-index: 0;
+                }
+                
+                .header-title, .header-subtitle {
+                    color: black;
+                }
+                
+                
+                .animate-pop-in {
+                    animation: pop-in .6s ease-out forwards;
+                    opacity: 0;
+                }
+                
+                .rocky-dashed {
+                    animation-delay: .6s;
+                }
+                
+                .header-title {
+                    animation-delay: .8s;
+                }
+                
+                
+                /* Animations */
+                
+                @keyframes pop-in {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(-4rem) scale(.8);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: none;
+                    }
+                }
+
+                  
+    
+    
+
+
+
+h1{
+color:white;
+}
+body{
+color:white;
+}
+p{
+color:white;
+}
+div.background {
+  background:url("11.jpg");
+  border: 2px solid black;
+}
+div.transbox {
+  margin: 100px;
+  background-color:#000000;
+  border: 1px solid black;
+  height:900px;
+  opacity: 0.7;
+  filter: alpha(opacity=60); 
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+
+}
+</style>
+</head>
+   <body>
+    
+	<div class="imgcontainer" style="position:absolute;">
+            <img src="Avatar.jpeg" alt="Avatar" class="avatar">
+        </div>
+        
+        <div align="right" style="background-color:#FFB74D;width:100%;height:13%;float:right;">
+        
+        <header>
+            <section class="header-content">
+                    <h1 class="header-title animate-pop-in">Student Welfare Portal</h1>
+        </header>
+        
+        
+        
+        </div>
+        <div class="navbar">
+            <div>
+               <a href="mainpage.html">
+                <button style="font-size: 10px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    background-color: inherit;
+                    font-family: inherit;
+                    margin: 0;"><i style="font-size:20px" class="fa">&#xf015;</i></button>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="collegefinal1.html">College</a></button>
+                <div class="dropdown-content">
+                    <a href="collegefinal1.html">Tution Fees</a>
+                    <a href="collegefinal1.html">SSEPL Fees</a>
+                    <a href="collegefinal1.html">Society Fees</a>
+                    <a href="collegefinal1.html">Transportation Fees</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="hostelfinal.html" style="color:white">Hostel</a></button>
+                <div class="dropdown-content">
+                    <a href="hostelfinal.html">Accomodation Fees</a>
+                    <a href="hostelfinal.html">Fine</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="regdpagef.html" style="color:white">Registration</a></button>
+                <div class="dropdown-content">
+                    <a href="regdpagef.html">Semester Registration</a>
+                    <a href="regdpagef.html">Back Paper Registratio</a>
+                    <a href="regdpagef.html">Debard Registration</a>
+                    <a href="regdpagef.html">Rechecking</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn"><a href="miscel.html" style="color:white">Miscellaneous Fees</a></button>
+                <div class="dropdown-content">
+                    <a href="miscel.html">Ambulance</a>
+                    <a href="miscel.html">Lab Manual</a>
+                    <a href="miscel.html">Library Fine</a>
+                </div>
+            </div>
+        
+        <div class="dropdown" style="float:right;margin-right:2%;">
+            <button class="dropbtn" style="padding: 10px 10px;"><i class="fa fa-user-circle-o" style="font-size:20px;"></i></button>
+            <div class="dropdown-content" style="right:0;">
+                <form>
+                    <a href="profile page.html" style="font-size:15px;">My Profile</a>
+                    <a href="index.html" style="font-size:15px;">Log Out</a>
+                    </div>
+               </form>
+            </div>
+
+
+        <div class="dropdown" style="float:right;">
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                    <button type="submit" style="padding: 10px 10px;"><i class="fa fa-search" style="font-size:20px;"></i></button>
+            </form>
+            </div>
+
+
+        
+        </div>
+	
+	
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   
+     <div class="background">
+         <div class="transbox">
+             <div id="regi">
+			        <form name="frmregister"  onsubmit="return validatefn()" >
+                            <h1 align="center" style="font-size:60px;"><br/><u><b> RATE US</b></u></h1>
+                           <center> <DIV style="font-size:30px;">
+							&nbsp &nbsp &nbsp <b>NAME:</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" name="txtname" id="txtname" 
+                                     maxlength="30" placeholder="Enter name" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" required onblur="validateuname();"/>
+                                    <div id="errormsg"/><br/><br/>
+							<b>RATING:</b> &nbsp &nbsp &nbsp <input type="radio" name="rdrate"/>Bad
+									&nbsp &nbsp &nbsp <input type="radio" name="rdrate"/>Average
+									&nbsp &nbsp &nbsp <input type="radio" name="rdrate"/>Good <br/><br/>
+									&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="rdrate"/>Very good
+									&nbsp &nbsp &nbsp &nbsp <input type="radio" name="rdrate"/>Excellent
+									<BR/>
+									<BR/>
+									<br/>
+							<b>FEEDBACK:</b>  &nbsp &nbsp &nbsp <textarea name="txaaddr" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" rows="2" cols="20" placeholder="Please give your valuable feedback"></textarea><br/></br>
+							<br/>
+							<br/>
+							<CENTER>
+							<input type="submit" class="button_active" value="SUBMIT" />
+								&nbsp &nbsp &nbsp &nbsp <input type="reset" align="center" value="Clear"/>
+							</CENTER>
+							</DIV>
+							</form>
+								
+						</div>
+                </div>
+           </div>
+       
+   </body>
+</html>

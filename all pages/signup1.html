@@ -1,0 +1,220 @@
+<html>
+<head> <title> SIGN UP </title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+<style>
+h1{
+color:white;
+}
+body{
+color:white;
+}
+div.background {
+  background:url("4.jpg");
+  border: 2px solid black;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+                
+                /* Full-width input fields */
+                input[type=text], input[type=password] , input[type=number] , textarea {
+                    width: 50%;
+                    background-color:transparent;
+                   
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: none;
+                    border-bottom: 2px solid orange;
+                    box-sizing: border-box;
+                    -webkit-transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
+                    overflow:auto;
+                }
+            input[type=text]:focus,input[type=password]:focus,input[type=number]:focus{
+                width: 100%; 
+				height:30px;
+            }
+            
+            
+            /* Set a style for all buttons */
+            button {
+                background-color: orange;
+                color: white;
+                padding: 5px 5px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 50%;
+            }
+            
+            button:hover {
+                opacity: 0.7;
+            }
+            
+            /* Extra styles for the cancel button */
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: black;
+            }
+            
+            
+            
+            /* Center the image and position the close button */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+            
+            img.avatar {
+                width: 40%;
+                border-radius: 100%;
+            }
+            
+            .container {
+                padding: 5px;
+            }
+            
+            span.psw {
+                float: right;
+                padding-top: 5px;
+            }
+            
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+                
+            }
+            
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+            }
+            
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: #000;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+            
+            /* Add Zoom Animation */
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+            
+            @-webkit-keyframes animatezoom {
+                from {-webkit-transform: scale(0)}
+                to {-webkit-transform: scale(1)}
+            }
+            
+            @keyframes animatezoom {
+                from {transform: scale(0)}
+                to {transform: scale(1)}
+            }
+            
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+                .cancelbtn {
+                    width: 100%;
+                }
+            }
+div.transbox {
+  margin: 100px;
+  background-color:#000000;
+  border: 1px solid black;
+  height:1000px;
+  opacity: 0.8;
+  filter: alpha(opacity=60); 
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+<script>
+function validateemail(uemail)
+{
+	if(
+	(uemail.indexOf("@") < 2)
+	||
+	(uemail.indexOf("@") != (uemail.lastIndexOf("@")))
+	)
+	{
+		alert("Invalid email");
+	}
+}
+</script>
+</head>
+   <body>
+     <div class="background">
+         <div class="transbox">
+             <div id="regi">
+                  
+                      <form name="frmregister" onclick="signup2.html" onsubmit="return validatefn()" method="POST" action="signup2.html" >
+                            <h1 align="center" style="font-size:40px;"><br/><u><b> Sign Up</b></u></h1>
+                            <h2><b><b><u>Personal Details</u></b></b></h2>
+					
+                                    NAME:&nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" name="txtname" id="txtname" 
+                                     maxlength="30" placeholder="Enter name" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" required onblur="validateuname();"/>
+                                    <div id="errormsg"/>
+                                UNIVERSITY REGD NO.:
+								<input type="number" name="txnregi" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" placeholder="Enter university registration no." required /><br/><br/>
+								Date of Birth:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="Date" name="dtdob"><br/><br/>
+								FATHER'S NAME:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" name="txtname" id="txtname" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;"
+								maxlength="12" placeholder="Enter father's name" required onblur="validateuname();"/>
+								<div id="errormsg"/><br/>
+								FATHER'S PHONE NO.: &nbsp  &nbsp <input type="number" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="txnmobile" placeholder="Enter father's phone number" required=""><br/><br/>
+								MOTHER'S NAME:  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" name="txtname" id="txtname" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;"
+								maxlength="12" placeholder="Enter mother's name" required onblur="validateuname();"/>
+								<div id="errormsg"/><br/>
+								MOTHER'S PHONE NO.:  &nbsp <input type="number" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="txnmobile" placeholder="Enter mother's phone number" required=""><br/>
+								CURRENT ADDRESS:  &nbsp  &nbsp &nbsp <textarea name="txaaddr" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" rows="2" cols="20" placeholder="Enter current address"></textarea><br/>
+								PERMANENT ADDRESS:  <textarea name="txaaddr" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" rows="2" cols="20" placeholder="Enter permanent address"></textarea><br/></br>
+								STUDENT'S PHONE NO.: <input type="number" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="txnmobile" placeholder="Enter student's phone number" required=""><br/>
+								AADHAR NUMBER:  &nbsp  &nbsp  &nbsp &nbsp   &nbsp <input type="number" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="txnmobile" placeholder="Enter aadhar number" required=""><br/>
+								PAN NUMBER: &nbsp  &nbsp  &nbsp  &nbsp  &nbsp   &nbsp  &nbsp  &nbsp  &nbsp <input type="number" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="txnmobile" placeholder="Enter PAN number" required=""><br/>
+								<br/>
+								<input type="submit" class="button_active" value="NEXT" />
+								&nbsp &nbsp &nbsp &nbsp <input type="reset" align="center" value="Clear"/>
+								
+								<script>
+								
+								
+								</script>
+                       </form>
+				   </div>
+                </div>
+           </div>
+       
+   </body>
+</html>
+
