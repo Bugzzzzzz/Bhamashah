@@ -5,10 +5,10 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
               <link href="css\learn_user\learn_user.css" rel="stylesheet">
 			
         <script>
@@ -26,6 +26,14 @@
     </head>
     <body style="background-color:#fff2e6">
 	<div class="background">
+      <!--   <?php 
+
+        if(!isset($_SESSION['bid'])){
+        header("Location: login.php");
+        die();
+
+        }
+         ?> -->
 	
         <div style="height:25%;background-color:#f26522;">
             <div class="imgcontainer" style="position:absolute;background-color:#f26522;">
@@ -48,13 +56,12 @@
         <!--Profile-->
         <div style="width:25%;max-height:30%;border:2px solid rgb(241,129,58);margin-left:30px;margin-top:1%;float:left;box-sizing:border-box;" class="w3-container">
                     <p align="center"><img src="images/logo.png" style="height:106px;width:106px;border-radius:100%;width=45%;" alt="Avatar"></p>
-					
-                        <h4 class="w3-center">Pratik Ghose</h4>
-						<h4 class="w3-center"><a href="login.html">Logout</a></h4>
+                        <h4 class="w3-center">&lt;User name&gt;</h4>
+						<h4 class="w3-center"><a href="logoutnext.php">Logout</a></h4>
                         <hr>
-                    <p><i class="fa fa-user fa-fw w3-margin-right w3-text-theme"></i>prtk2</p>
-                    <p><i class="fa fa-map-marker fa-fw w3-margin-right w3-text-theme"></i>Kolkata</p>
-                    <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>17<sup>th</sup> January 1999</p>
+                    <p><i class="fa fa-user fa-fw w3-margin-right w3-text-theme"></i>&lt;User name&gt;</p>
+                    <p><i class="fa fa-map-marker fa-fw w3-margin-right w3-text-theme"></i>&lt;city&gt;</p>
+                    <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>&lt;DOB&gt;</p>
               
                     <p><i class="fa fa-flag fa-fw w3-margin-right w3-text-theme"></i>India</p>
 
@@ -71,30 +78,29 @@
                 </tr>
                 <tr>
                 <td><p>Mobile no.:</p></td>
-                <td><p id="myP" contentEditable="true">9078959124</p></td>
+                <td><p id="myP" contentEditable="true">&lt;phone number&gt;</p></td>
                 </tr>
                 
                 <tr>
                 <td><p>Address:</p></td>
-                <td><p id="myP" contentEditable="true">HIG-83, K6 Kalinga Vihar,Bhubaneshwar</p></td>
+                <td><p id="myP" contentEditable="true">&lt;Address&gt;</p></td>
                 </tr>
                 
                 <tr>
                 <td><p>Email Id:</p></td>
-                <td><p id="myP" contentEditable="true">prtk2@live.com</p></td>
+                <td><p id="myP" contentEditable="true">&lt;email id&gt;</p></td>
                 </tr>
                 
            
                 
             </table>
         </div>
-		
+		 
 		
 		 <div style="width:70%;height:30%;float:right;border:2px solid rgb(241,129,58);margin-top:1%;margin-right:30px;box-sizing:border-box;" class="w3-container">
          
     <!-- Progress bars / Skills -->
-    <h3><b>COURSE PROGRESS</b></h3><br>
-	<h5><b>COOKING</b></h5>
+    <h3><b>EARNING</b></h3>
 	<br>
     <div class="w3-grey">
       <div class="w3-container w3-dark-grey w3-padding w3-center"  style="width:90%">90%</div>
@@ -103,60 +109,49 @@
           
         </div>
 		
+		 
+		<div style="width:70%;height:30%;float:right;border:2px solid rgb(241,129,58);margin-top:1%;margin-right:30px;box-sizing:border-box;" class="w3-container">
+		<h3><b>INVESTMENT</b></h3>
+	<br>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center"  style="width:60%">60%</div>
+    </div>
+            <br>
+          
+        </div>
 		
-       <!--account realted stuff-->
-            <div style="width:70%;float:right;border:2px solid rgb(241,129,58);margin-top:1%;margin-right:30px;box-sizing:border-box;" class="w3-container">
-                
-                <div style="width:96%;margin-top:5px;margin-left:2%;margin-right:2%;margin-bottom:5px;float:center;">
-                   
-					 
-                   <h3 style="margin-right:60%;"><B>BADGES</B></h3>
-                    <div class="learn" style="margin-right:60%;width:40%;float:right;">
-                     <h3>Learner: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <span class="fa fa-star checked "></span> </h3>
-				
-                    </div>
-                   <div style="margin-right:60%;width:40%;float:right;">
-                     <h3>Ameture: &nbsp &nbsp &nbsp &nbsp &nbsp  <span class="fa fa-star"></span>  <span class="fa fa-star"></span> </h3>
-                    </div>
-                   <div style="margin-right:60%;width:40%;float:right;">
-                     <h3>Expert: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span> </h3>
-                    </div>
-                    <div style="margin-right:60%;width:40%;float:right;">
-                     <h3>Multi-leaner: &nbsp  &nbsp  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span></h3>
-                    </div>
-                   <div style="margin-right:60%;width:40%;float:right;">
-                     <h3>Master trainer: &nbsp  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span> </h3>
-                    </div>
-                   
-                </div>
-                </div>
-				<div style="width:25%;max-height:30%;border:2px solid rgb(241,129,58);margin-left:30px;margin-top:1%;float:left;box-sizing:border-box;" class="w3-container">
+		
+					<div style="width:25%;max-height:30%;border:2px solid rgb(241,129,58);margin-left:30px;margin-top:1%;float:left;box-sizing:border-box;" class="w3-container">
             <table>
                
                 <tr>
                     <td><p align="right">Adhar No.:</p></td>
-                    <th><p align="left">6672 2345 1234</p></th>
+                    <th><p align="left">&lt;ADHAAR card number&gt;</p></th>
                 </tr>
                 
                 <tr>
                     <td><p align="right">Bhamashah id.:</p></td>
-                    <th><p align="left">AZXSET5645X</p></th>
+                    <th><p align="left">&lt;Bhamashah card number&gt;</p></th>
                 </tr>
                
             </table>
         </div>
-				 
-                 <div style="width:70%;float:right;border:2px solid rgb(241,129,58);margin-top:1%;margin-right:30px;box-sizing:border-box;" class="w3-container">
+		
+		
+       <!--account realted stuff-->
+					
+		<div style="width:70%;float:right;border:2px solid rgb(241,129,58);margin-top:1%;margin-right:30px;box-sizing:border-box;" class="w3-container">
                 <div style="width:96%;margin-top:5px;margin-left:2%;margin-right:60%;float:center;">
                    
-             <h3><b>CERTIFICATES</b></h3>       
+             <h3><b>SKILL SET</b></h3>       
     <ol type="1">
 	<li class="1"><h5>cooking</li>
 	<li class="2">painting</h5></li>
   </div>
                 </div>
-               </div>
-                    </div> <br> <br>
+		
+					
+					
                    <div>
 				    <div style="width:70%;float:right;border:2px solid rgb(241,129,58);margin-top:1%;margin-right:30px;box-sizing:border-box;" class="w3-container">
                     <div style="margin-right:60%;width:90%;margin-top:20px;float:left;">

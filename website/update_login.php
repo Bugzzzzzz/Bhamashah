@@ -10,7 +10,7 @@
                 width:500px;
             }
 			 body{
-                 background-image: url(images/update.png);
+                 background-image: url(images/update.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
@@ -21,7 +21,7 @@
     <body>
         
         
-     <div class="w3-card w3-container w3-content w3-display-middle box w3-hover-orange w3-hover-opacity" >
+     <div class="w3-card w3-container w3-content w3-display-middle box w3-hover-orange" >
         <center>
         <div class="w3-display-middle">
 		<form class="loan">

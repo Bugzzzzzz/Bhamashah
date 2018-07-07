@@ -6,17 +6,21 @@
     <link rel="stylesheet" type="text/css" href="style.css">   
 </head>
     <body>
+         <?php 
+        session_start();
+        include './content/trainerlogincontent.php';
+         ?>
     <div class="login-box">
 <!--    <img src="avatar.png" class="avatar">-->
-        <h1>Login Here</h1>
-            <form>
-            <p>BHAMASHAH ID</p>
-            <input type="number" name="number" placeholder="Enter BHAMASHAH ID" min="10000000000" max="99999999999" required>
+        <h1>TRAINER LOGIN PORTAL</h1>
+            <form method="POST" action="">
+            <p>USER NAME</p>
+            <input type="text" name="username" placeholder="Enter USER NAME" required>
             <p>PASSWORD</p>
             <input type="password" name="password" placeholder="Enter Password" required>
             <input type="submit" name="submit" value="Login">
-            <a href="#">Forget Password</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="#">Sign Up</a>
+            <!-- <a href="#">Forget Password</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -->
+            <a href="registrationTC.php">Sign Up</a>
             </form>
         
         

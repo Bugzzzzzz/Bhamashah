@@ -9,6 +9,12 @@
                 height: 400px;
                 width:800px;
             }
+			  body{
+                 background-image: url(images/stats.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
         </style>
     </head>
     <body>
@@ -17,7 +23,8 @@
      <div class="w3-card w3-container w3-content w3-display-middle box w3-hover-orange w3-round" >
         <center>
         <div class="w3-display-middle">
-         <b class=""> ENTER THE DETAILS</b>
+         <b class=""><h2><b> ENTER THE DETAILS</b></h2></b>
+		 <form class="tracer">
          <table>
              <tr>
                  <td>BHAMASHAH ID</td>
@@ -41,7 +48,8 @@
              </tr>
              
          </table>
-         <button id="btnapply" class="w3-btn w3-ripple w3-hover-red w3-margin-top"> <a href="trainer_user.html"> APPLY </a></button>
+         <input type="submit" value="Apply" id="btnapply" class="w3-btn w3-ripple w3-hover-red w3-margin-top"><a href="trainer_user.php></a></input>
+		 </form>
          </div>
          </center>
      </div>

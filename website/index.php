@@ -15,7 +15,7 @@
             <img src="images/logo.png" alt="Avatar" class="avatar">
                 </div>
         
-        <div align="right" style="background-color:orange;width:100%;height:15%;float:right;">
+        <div align="right" style="background-color:#f26522;width:100%;height:15%;float:right;">
             
             <header>
                 <section class="header-content">
@@ -33,8 +33,8 @@ To build a better society,empowerment of every woman is imperative because empow
 Bank Account and Bhamashah Card to be made in the name of the lady of the house that empowers her to be the decision-maker for the family, for effective use of all cash and non-cash benefits undervarious public welfare schemes of the government.</p></div>
 
 		</div> 
-       <a href="#"> <button  style="width:auto;margin-top:50px;float:right;margin-right:50px;width:15%;"> Click me to log-in to user</button></a> 
-      <a href="#">  <button  style="width:auto;margin-top:110px;float:right;margin-right:-200px;width:15%;">Click me to log-in to Trainer</button> </a>
+       <a href="login.php"> <button style="background-color:#f26522;width:auto;margin-top:50px;float:right;margin-right:50px;width:15%;"> Click me to log-in to user</button></a> 
+      <a href="trainerlogin.php"> <button  style="background-color:#f26522;width:auto;margin-top:110px;float:right;margin-right:-207px;width:15%;">Click me to log-in to Trainer</button> </a>
       
                 
               </div>  

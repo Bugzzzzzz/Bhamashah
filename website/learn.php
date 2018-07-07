@@ -3,88 +3,45 @@
         <title>
             
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <style>
+        <style>
 
-                .wide{
-                    max-width: 50%;
-                }
+            .wide{
+                max-width: 50%;
+            }
 
-                body{
-                     background-image: url(learn1.jpg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-attachment: fixed;
-                }
-                .OP{
-                opacity:0.8;
-                }
-            </style>
+            body{
+                 background-image: url(learn1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+			.OP{
+			opacity:0.8;
+			}
+        </style>
     </head>
-    
-    <script type="text/javascript">
-    $(window).on('load',function(){
-        $('#myModal').modal('show');
-    });
-</script>
-    
-   <!-- <script>
-function myFunction() {
-    data-toggle="modal"; data-target="#myModal";
-}
-</script>-->
-      
-    <body class="w3-padding-16 ">
-     
-  <!-- Trigger the modal with a button -->
-  <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+    <?php 
+    	session_start();
+    	include './content/learncontent.php';
 
-  <!-- Modal -->
-  <div class="container">
-    <h2>Modal Example</h2>
-    <!-- Trigger the modal with a button -->
-    <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
-  
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-      
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the modal.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-  </div>
+     ?>
+    <body class="w3-padding-16 ">
        <center>
         <div class="w3-black OP w3-center w3-card w3-margin-left w3-margin-right wide w3-round">
             
-                      <form name="frmregister" method="POST" class="wide w3-content" >
+                      <form name="frmregister" method="POST" action="" class="wide w3-content" >
                             <p align="center" class="w3-xxxlarge" style="font-size:40px;"><br/><u><b> Learn</b></u></p>
                           
-                                    Existing Skill Set:<input type="text" name="txtname" id="txtname" class="w3-padding-16 w3-round w3-input w3-border w3-content "
-                                     placeholder="Enter your skills" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" required onblur="validateuname();"/>
+                                    Existing Skill Set:<input type="text" name="existingskill" id="txtname" class="w3-padding-16 w3-round w3-input w3-border w3-content "
+                                     placeholder="Enter your skills(Eg:- Cooking,Knitting,Weaving)" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" required onblur="validateuname();"/>
                                      <br/>
 
                                                                                                              
                                     Learn Skills:<br/>
                                                                           
-												Skill Set 1:<select>
+												Skill Set 1:<select  name="skill1" >
 												  <option value="cook">Cooking</option>
 												  <option value="stitch">Stitching</option>
 												  <option value="craft">Crafting</option>
@@ -97,7 +54,7 @@ function myFunction() {
 												  <option value="knit">Knitting</option>
 												</select><br/><br/>
 												
-												Skill Set 2:<select>
+												Skill Set 2:<select name="skill2" >
 												  <option value="cook">Cooking</option>
 												  <option value="stitch">Stitching</option>
 												  <option value="craft">Crafting</option>
@@ -110,7 +67,7 @@ function myFunction() {
 												  <option value="knit">Knitting</option>
 												</select><br/><br/>
 												
-												Skill Set 3:<select>
+												Skill Set 3:<select name="skill3" >
 												  <option value="cook">Cooking</option>
 												  <option value="stitch">Stitching</option>
 												  <option value="craft">Crafting</option>
@@ -123,7 +80,7 @@ function myFunction() {
 												  <option value="knit">Knitting</option>
 												</select><br/><br/>
 												
-												Skill Set 4:<select placeholder="enter 4th skill">
+												Skill Set 4:<select  name="skill4" placeholder="enter 4th skill">
 												  <option value="cook">Cooking</option>
 												  <option value="stitch">Stitching</option>
 												  <option value="craft">Crafting</option>
@@ -136,7 +93,7 @@ function myFunction() {
 												  <option value="knit">Knitting</option>
 												</select><br/><br/>
 												
-												Skill Set 5:<select>
+												Skill Set 5:<select name="skill5" >
 												  <option value="cook">Cooking</option>
 												  <option value="stitch">Stitching</option>
 												  <option value="craft">Crafting</option>
@@ -150,7 +107,7 @@ function myFunction() {
 												</select><br/><br/>
                                     
 								<br/>
-                                <input type="submit" class="w3-button w3-margin-bottom w3-content w3-border w3-round w3-ripple w3-hover-green" value="SUBMIT" />
+                                <input type="submit"  name="submit" class="w3-button w3-margin-bottom w3-content w3-border w3-round w3-ripple w3-hover-green" value="SUBMIT" />
 								<input type="reset" class="w3-button w3-margin-bottom w3-content w3-border w3-round w3-ripple w3-hover-red" value="CLEAR"/>
                           
             </form>

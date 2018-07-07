@@ -39,20 +39,20 @@
               
   <div class="w3-row-padding">
     <div class="w3-half w3-container">
-      <a href="learn_user.html"><img src="images/learner.jpg" alt="bodj" style="width:100%;" class="w3-card"></a>
+      <a href="./content/learnerdecide.php"><img src="images/learner.jpg" alt="bodj" style="width:100%;" class="w3-card"></a>
       <div class="container">
       <div class="content">
             <h1>Learner</h1>
-             <p>"text about learner"</p>
+            
       </div>
       </div>
     </div>
         <div class="w3-half w3-container">
-      <a href="earn_user.html"><img src="images/earner.jpg" alt="bodj" style="width:100%" class="w3-card"></a>
+      <a href="./content/earnerdecide.php"><img src="images/earner.jpg" alt="bodj" style="width:100%" class="w3-card"></a>
       <div class="container">
       <div class="content">
             <h1>Earner</h1>
-             <p>"text about earner"</p>
+  
       </div>
       </div>
     </div>
