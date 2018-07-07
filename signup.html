@@ -13,7 +13,7 @@
     <body class="w3-vivid-reddish-orange w3-padding-16">
         <div class="w3-white w3-opacity-min w3-center w3-card w3-margin-left w3-margin-right">
             
-                      <form name="frmregister" method="POST" >
+                      <form action="submit.php" name="frmregister" method="POST" enctype="multipart/form-data" >
                             <p align="center" class="w3-opacity w3-xxxlarge" style="font-size:40px;"><br/><u><b> Sign Up</b></u></p>
                           <h2><b><b><u>Personal Details</u></b></b></h2>
                                     NAME:<input type="text" name="txtname" id="txtname" class="w3-padding-16 w3-input w3-border w3-content w3-hover-orange"
@@ -24,17 +24,17 @@
                                     
                                     Date of Birth:<input type="Date" name="dtdob" class="w3-padding-16 w3-input w3-border w3-content"><br/><br/>
                                     
-                                    CURRENT ADDRESS:<textarea name="txaaddr" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" rows="2" cols="20" placeholder="Enter current address" class="w3-padding-16 w3-input w3-border w3-content"></textarea><br/>
+                                    CURRENT ADDRESS:<textarea name="txaaddr1" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" rows="2" cols="20" placeholder="Enter current address" class="w3-padding-16 w3-input w3-border w3-content"></textarea><br/>
 								    
-                                   PERMANENT ADDRESS:  <textarea name="txaaddr" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" rows="2" cols="20" placeholder="Enter permanent address" class="w3-padding-16 w3-input w3-border w3-content"></textarea><br/></br>
+                                   PERMANENT ADDRESS:  <textarea name="txaaddr2" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" rows="2" cols="20" placeholder="Enter permanent address" class="w3-padding-16 w3-input w3-border w3-content"></textarea><br/></br>
                                     
-                                    AADHAR NUMBER:<input type="number" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="txnmobile" placeholder="Enter aadhar number" required="" class="w3-padding-16 w3-input w3-border w3-content"><br/>
+                                    AADHAR NUMBER:<input type="number" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="aadhar" placeholder="Enter aadhar number" required="" class="w3-padding-16 w3-input w3-border w3-content"><br/>
                                     
-                                    ADHAAR UPLOAD:<input type="file" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="txnmobile" placeholder="Upload your ADHAAR CARD XEROX" required="" class="w3-padding-16 w3-input w3-border w3-content"/><br/>
+                                    ADHAAR UPLOAD:<input type="file" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="aadharup" placeholder="Upload your ADHAAR CARD XEROX" required="" class="w3-padding-16 w3-input w3-border w3-content"/><br/>
                                     
-                                    BHAMASHAH NUMBER:<input type="number" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="txnmobile" placeholder="Enter PAN number" required="" class="w3-padding-16 w3-input w3-border w3-content"><br/>
+                                    BHAMASHAH NUMBER:<input type="number" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="bhamashah" placeholder="Enter PAN number" required="" class="w3-padding-16 w3-input w3-border w3-content"><br/>
                                     
-                                    BHAMASHAH CARD UPLOAD:<input type="file" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="txnmobile" placeholder="Upload your BHAMASHAH CARD XEROX" required="" class="w3-padding-16 w3-input w3-border w3-content"/>
+                                    BHAMASHAH CARD UPLOAD:<input type="file" style="border:none;border-bottom:2px solid orange;background-color:inherit;color:white;" name="bhamashahup" placeholder="Upload your BHAMASHAH CARD XEROX" required="" class="w3-padding-16 w3-input w3-border w3-content"/>
 								<br/>
                                 <input type="submit" class="w3-button w3-margin-bottom w3-content w3-border w3-round w3-ripple" value="NEXT" />
 								<input type="reset" class="w3-button w3-margin-bottom w3-content w3-border w3-round w3-ripple" value="CLEAR"/>
