@@ -9,189 +9,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <style>
-				.checked {
-    color: orange;
-}
-				.dropbtn {
-    background-color:#A9A9A9;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-	width:45%;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-	width:45%;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #DCDCDC}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #DCDCDC;
-}
-                   
-                button {
-                    background-color: orange;
-                    color: white;
-                    border: none;
-                    cursor: pointer;
-                }
-                form.example input[type=text] {
-                    background-color:transparent;
-                    padding: 10px 10px;
-                    display: inline-block;
-                    border: none;
-                    border-bottom:2px solid rgb(241,129,28);
-                    font-size: 17px;
-                    float: left;
-                    width: 50%;
-                    background-color: inherit;
-                }
-                form.example button {
-                    float: left;
-                    width: 20%;
-                     padding: 10px 10px;
-                    background: inherit;
-                    color: white;
-                    font-size: 20px;
-                    border: none;
-                    cursor: pointer;
-                }
-                form.example button:hover {
-                    background: rgb(241,129,58);
-                }
-                form.example::after {
-                    content: "";
-                    clear: both;
-                    display: table;
-                }
-                .imgcontainer {
-                    float:left;
-                }
-                img.avatar {
-                    width: 45%;
-                    border-radius: 100%;
-                }
-                
-                
-    header {
-        align-items: center;
-        display: flex;
-        font-size: 18px;
-        justify-content: center;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        transform-style: preserve-3d;
-        perspective: 100px;
-    }
-                header:before {
-                    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)),
-                    background-size: cover;
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    z-index: -1;
-                }
-                header:after {
-                    background: #F9FCFF;
-                    content: "";
-                    left: -5%;
-                    position: absolute;
-                    right: -5%;
-                    top: 90%;
-                    transform-origin: 0 0;
-                    transform: rotateZ(-4deg);
-                    z-index: 0;
-                }
-                .header-title, .header-subtitle {
-                    color: black;
-                }
-                .animate-pop-in {
-                    animation: pop-in .6s ease-out forwards;
-                    opacity: 0;
-                }
-                .rocky-dashed {
-                    animation-delay: .6s;
-                }
-                .header-title {
-                    animation-delay: .8s;
-                }
-                @keyframes pop-in {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(-4rem) scale(.8);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: none;
-                    }
-                }
-                
-                
-                
-                .inputs{
-                    display:none;
-                }
-                .foo:checked + .inputs{
-                    display: initial;
-                }
-                
-                
-                
-                
-                
-                
-               
-               
-              
-                
-                .numberCircle {
-  border-radius: 70%;
-  behavior: url(PIE.htc);
-  /* remove if you don't care about IE8 */
-  width: 36px;
-  height: 36px;
-  padding: 2px;
-  background: #fff;
-  border: 2px solid #666;
-  color: #666;
-  text-align: center;
-  font: 26px Arial, sans-serif;
-}
-                
-                
-                
-                
-        </style>
+              <link href="css\learn_user\learn_user.css" rel="stylesheet">
+			
         <script>
             function myFunction(button) {
                 var x = document.getElementById("myP");
@@ -205,13 +24,15 @@
             }
         </script>
     </head>
-    <body>
-        <div style="height:35%;background-color:orange;">
-            <div class="imgcontainer" style="position:absolute;background-color:orange;">
-                <img src="Avatar.jpeg" alt="Avatar" class="avatar">
+    <body style="background-color:#fff2e6">
+	<div class="background">
+	
+        <div style="height:25%;background-color:#f26522;">
+            <div class="imgcontainer" style="position:absolute;background-color:#f26522;">
+                <img src="images/logo.png" alt="Avatar" class="avatar">
 				</div>
             
-            <div align="right" style="background-color:orange;width:100%;height:35%;float:center;">
+            <div align="right" style="background-color:#f26522;width:100%;height:35%;float:center;">
         
                 <header>
                     <section class="header-content">
@@ -226,7 +47,7 @@
     <div>
         <!--Profile-->
         <div style="width:25%;max-height:30%;border:2px solid rgb(241,129,58);margin-left:30px;margin-top:1%;float:left;box-sizing:border-box;" class="w3-container">
-                    <p align="center"><img src="123.png" style="height:106px;width:106px;border-radius:100%;width=45%;" alt="Avatar"></p>
+                    <p align="center"><img src="images/logo.png" style="height:106px;width:106px;border-radius:100%;width=45%;" alt="Avatar"></p>
                         <h4 class="w3-center">Pratik Ghose</h4>
                         <hr>
                     <p><i class="fa fa-user fa-fw w3-margin-right w3-text-theme"></i>prtk2</p>
@@ -242,6 +63,10 @@
         
             <div style="float:right;"><button onclick="myFunction(this);" style="color:black;background-color:white;"><i class="fa fa-pencil"></i></button></div>
             <table>
+			<tr>
+                <td><h4><b>EDITABLE DETAILS-</h4></b></td>
+                
+                </tr>
                 <tr>
                 <td><p>Mobile no.:</p></td>
                 <td><p id="myP" contentEditable="true">9078959124</p></td>
@@ -261,22 +86,30 @@
                 
             </table>
         </div>
+		
+		
+		 <div style="width:70%;height:30%;float:right;border:2px solid rgb(241,129,58);margin-top:1%;margin-right:30px;box-sizing:border-box;" class="w3-container">
+         
+    <!-- Progress bars / Skills -->
+    <h3><b>COURSE PROGRESS</b></h3>
+	<br>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center"  style="width:90%">90%</div>
+    </div>
+            <br>
+          
+        </div>
+		
+		
        <!--account realted stuff-->
             <div style="width:70%;float:right;border:2px solid rgb(241,129,58);margin-top:1%;margin-right:30px;box-sizing:border-box;" class="w3-container">
                 
                 <div style="width:96%;margin-top:5px;margin-left:2%;margin-right:2%;margin-bottom:5px;float:center;">
                    
-                    <h3 style="margin-right:60%;"><b>Course Progess</b></h3>
-                  
-                       <div class="progress" style="margin-right:60%;width:70%;float:left;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-               <span class="sr-only">50% Complete</span>
-                  </div>
-                     </div>
 					 
                    <h3 style="margin-right:60%;"><B>BADGES</B></h3>
                     <div class="learn" style="margin-right:60%;width:40%;float:right;">
-                     <h3>Learner:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <span class="fa fa-star"></span> </h3>
+                     <h3>Learner: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <span class="fa fa-star checked "></span> </h3>
 				
                     </div>
                    <div style="margin-right:60%;width:40%;float:right;">
@@ -286,35 +119,47 @@
                      <h3>Expert: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span> </h3>
                     </div>
                     <div style="margin-right:60%;width:40%;float:right;">
-                     <h3>Multi-leaner: &nbsp &nbsp   <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span></h3>
+                     <h3>Multi-leaner: &nbsp  &nbsp  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span></h3>
                     </div>
                    <div style="margin-right:60%;width:40%;float:right;">
-                     <h3>Master trainer:  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span> </h3>
+                     <h3>Master trainer: &nbsp  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span>  <span class="fa fa-star"></span> </h3>
                     </div>
                    
                 </div>
-
+                </div>
+				<div style="width:25%;max-height:30%;border:2px solid rgb(241,129,58);margin-left:30px;margin-top:1%;float:left;box-sizing:border-box;" class="w3-container">
+            <table>
+               
+                <tr>
+                    <td><p align="right">Adhar No.:</p></td>
+                    <th><p align="left">6672 2345 1234</p></th>
+                </tr>
                 
+                <tr>
+                    <td><p align="right">Bhamashah id.:</p></td>
+                    <th><p align="left">AZXSET5645X</p></th>
+                </tr>
+               
+            </table>
+        </div>
+				 
+                 <div style="width:70%;float:right;border:2px solid rgb(241,129,58);margin-top:1%;margin-right:30px;box-sizing:border-box;" class="w3-container">
                 <div style="width:96%;margin-top:5px;margin-left:2%;margin-right:60%;float:center;">
                    
-                    <div class="dropdown" style="margin-right:10%;width:90%;float:right">
-  <button class="dropbtn">Certificates</button>
-  <div class="dropdown-content">
+             <h3><b>CERTIFICATES</b></h3>       
     <ol type="1">
-	<li class="1">cooking</li>
-	<li class="2">painting</li>
-	<li class="3"></li>
-	<li class="4"></li>
-	<li class="5"></li>
+	<li class="1"><h5>cooking</li>
+	<li class="2">painting</h5></li>
   </div>
                 </div>
-               
+               </div>
                     </div> <br> <br>
                    <div>
+				    <div style="width:70%;float:right;border:2px solid rgb(241,129,58);margin-top:1%;margin-right:30px;box-sizing:border-box;" class="w3-container">
                     <div style="margin-right:60%;width:90%;margin-top:20px;float:left;">
                         <div class="w3-container w3-padding-large w3-grey">
     <h4 id="contact"><b>Feedback</b></h4>
-    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px;">
+    <div class="w3-row-padding w3-center w3-padding-24">
       <div class="w3-third w3-dark-grey">
         <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
         <p>apurv.rathore.prakash@gmail.com</p>
@@ -351,22 +196,9 @@
             </div>
         </div>
          <!--EVERY DETAILS-->
-        <div style="width:25%;max-height:30%;border:2px solid rgb(241,129,58);margin-left:30px;margin-top:1%;float:left;box-sizing:border-box;" class="w3-container">
-            <table>
-               
-                <tr>
-                    <td><p align="right">Adhar No.:</p></td>
-                    <th><p align="left">6672 2345 1234 0934</p></th>
-                </tr>
-                
-                <tr>
-                    <td><p align="right">Bhamashah card No.:</p></td>
-                    <th><p align="left">AZXSET5645X</p></th>
-                </tr>
-               
-            </table>
-        </div>
+       
     </div>
+	</div>
     </body>
 </html>
 
