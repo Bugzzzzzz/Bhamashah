@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 08, 2018 at 01:57 AM
+-- Generation Time: Jul 08, 2018 at 02:20 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -42,7 +42,10 @@ CREATE TABLE `earningskill` (
 --
 
 INSERT INTO `earningskill` (`Id`, `Bid`, `Skill1`, `Skill2`, `Skill3`, `DateCreated`) VALUES
-(1, '78945612301', 'craft', 'weav', 'sing', '2018-07-07 20:55:58');
+(1, '78945612301', 'craft', 'weav', 'sing', '2018-07-07 20:55:58'),
+(2, '98989898981', 'stitch', 'sing', 'dance', '2018-07-08 00:09:00'),
+(3, '97979797971', 'craft', 'cook', 'bt', '2018-07-08 00:15:05'),
+(4, '97979797971', 'cook', 'weav', 'bt', '2018-07-08 00:16:39');
 
 -- --------------------------------------------------------
 
@@ -63,7 +66,10 @@ CREATE TABLE `existingskill` (
 
 INSERT INTO `existingskill` (`Id`, `Bid`, `Skill`, `DateCreated`) VALUES
 (1, '78945612301', 'Cooking,Knit', '2018-07-07 20:20:20'),
-(6, '78945612301', 'k,pp', '2018-07-07 20:32:38');
+(6, '78945612301', 'k,pp', '2018-07-07 20:32:38'),
+(7, '98989898981', 'k,p,c', '2018-07-08 00:10:13'),
+(8, '98989898981', 'a', '2018-07-08 00:12:15'),
+(9, '97979797971', 'p,q,r', '2018-07-08 00:14:15');
 
 -- --------------------------------------------------------
 
@@ -90,7 +96,10 @@ INSERT INTO `learningskill` (`Id`, `Bid`, `Skill1`, `Skill2`, `Skill3`, `Skill4`
 (1, '', 'stitch', 'craft', 'dance', 'ct', 'bt', '2018-07-07 20:24:46'),
 (2, '', 'stitch', 'craft', 'dance', 'ct', 'bt', '2018-07-07 20:25:31'),
 (3, '', 'stitch', 'craft', 'dance', 'ct', 'bt', '2018-07-07 20:26:05'),
-(4, '78945612301', 'cook', 'cook', 'cook', 'cook', 'cook', '2018-07-07 20:32:38');
+(4, '78945612301', 'cook', 'cook', 'cook', 'cook', 'cook', '2018-07-07 20:32:38'),
+(5, '98989898981', 'cook', 'cook', 'cook', 'cook', 'cook', '2018-07-08 00:10:13'),
+(6, '98989898981', 'cook', 'cook', 'cook', 'cook', 'cook', '2018-07-08 00:12:15'),
+(7, '97979797971', 'craft', 'weav', 'paint', 'ct', 'dance', '2018-07-08 00:14:15');
 
 -- --------------------------------------------------------
 
@@ -121,7 +130,8 @@ CREATE TABLE `trainer` (
 
 INSERT INTO `trainer` (`Id`, `Name`, `PhoneNo`, `DOB`, `CAddress`, `PAddress`, `BAC`, `Aadhar`, `Username`, `Password`, `Comp`, `Apply`, `Amount`, `DateCreated`) VALUES
 (9, 'a', 2147483647, '2018-07-06', 'a', 'a', '9876549874', '9876549874', 'a', '0', 1, 1, 39999, '2018-07-07 22:20:28'),
-(10, 'k', 2147483647, '2018-07-27', 'a', 'a', '9876549874', '987654321654', 'AA', '0', 0, 0, 0, '2018-07-07 22:23:35');
+(10, 'k', 2147483647, '2018-07-27', 'a', 'a', '9876549874', '987654321654', 'AA', '0', 0, 0, 0, '2018-07-07 22:23:35'),
+(11, 'abc', 2147483647, '2018-07-01', 'abc', 'abc', '78787878780', '78787878780', 'aba', 'aba', 1, 0, 0, '2018-07-08 00:03:38');
 
 -- --------------------------------------------------------
 
@@ -151,7 +161,8 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`Id`, `Name`, `PhoneNo`, `DOB`, `CAddress`, `PAddress`, `Aadhar`, `Bid`, `Password`, `Learner`, `Earner`, `DateCreated`) VALUES
 (1, ' fdh', 2147483647, '2018-07-19', 'sdg', 'dfbgdf', '2147483647', '21474836470', '123', 0, 0, '2018-07-07 18:29:30'),
 (3, ' Apurv', 2147483647, '2018-07-14', 'rgdvf', 'dvs', '789456123012', '78945612301', '1234', 1, 1, '2018-07-07 19:17:52'),
-(4, ' abc', 2147483647, '2007-06-21', 'abc', 'abc', '989898989800', '98989898981', '123', 0, 0, '2018-07-07 23:44:05');
+(4, ' abc', 2147483647, '2007-06-21', 'abc', 'abc', '989898989800', '98989898981', '123', 0, 0, '2018-07-07 23:44:05'),
+(5, ' q', 2147483647, '2016-07-07', 'abc', 'abc', '979797979712', '97979797971', '123', 1, 1, '2018-07-08 00:13:45');
 
 --
 -- Indexes for dumped tables
@@ -197,31 +208,31 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `earningskill`
 --
 ALTER TABLE `earningskill`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `existingskill`
 --
 ALTER TABLE `existingskill`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `learningskill`
 --
 ALTER TABLE `learningskill`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `trainer`
 --
 ALTER TABLE `trainer`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

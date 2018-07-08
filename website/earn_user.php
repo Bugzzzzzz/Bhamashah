@@ -26,14 +26,7 @@
     </head>
     <body style="background-color:#fff2e6">
 	<div class="background">
-      <!--   <?php 
-
-        if(!isset($_SESSION['bid'])){
-        header("Location: login.php");
-        die();
-
-        }
-         ?> -->
+    
 	
         <div style="height:25%;background-color:#f26522;">
             <div class="imgcontainer" style="position:absolute;background-color:#f26522;">

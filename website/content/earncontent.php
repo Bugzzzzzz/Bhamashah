@@ -34,9 +34,9 @@ include './init.php';
 			<?php 
 			
 
-				$stmt2=$dbconnect->prepare('UPDATE `user` SET `Earner`=1 WHERE `Id`=? AND `Bid`=?');
+				$stmt2=$dbconnect->prepare('UPDATE `user` SET `Earner`=1 WHERE `Bid`=?');
 
-				$stmt2->bind_param('ss',$user,$bid); // 's' specifies the variable type=> 'string'
+				$stmt2->bind_param('s',$bid); // 's' specifies the variable type=> 'string'
 
 				$stmt2->execute();
 

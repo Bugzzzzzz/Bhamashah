@@ -25,13 +25,7 @@
         </script>
     </head>
     <body style="background-color:#fff2e6">
-<!-- <?php 
-  if(!isset($_SESSION['username'])){
-header("Location: trainerlogin.php");
-die();
 
-}
- ?> -->
 	<div class="background">
 	
         <div style="height:25%;background-color:#f26522;">

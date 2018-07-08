@@ -11,8 +11,8 @@ include './init.php';
 		$stmt->execute();
 		$result=$stmt->get_result();
 		if($row=$result->fetch_assoc()){
-			$_SESSION['trainer']=mysqli_insert_id($dbconnect);
-			$_SESSION['username']=$username;
+			$_SESSION['trainer']=$row['Id'];
+			$_SESSION['username']=$row['Username'];
 			header("Location: trainer_user.php");
 			die();
 
