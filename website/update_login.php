@@ -24,12 +24,12 @@
      <div class="w3-card w3-container w3-content w3-display-middle box w3-hover-orange" >
         <center>
         <div class="w3-display-middle">
-		<form class="loan">
+		<form class="loan" method="POST" action="update.php">
          <b class=""> ENTER YOUR BHAMASHAH ID</b>
          <input type="number" id="bid" placeholder="Enter your BHAMASHAH ID" required class="w3-margin w3-hover-yellow"/>
          <br/>
-         <input type="submit" value="Apply" id="btnapply" class="w3-btn w3-ripple w3-hover-red w3-margin-top"><a href="update.php"></a></input>
-		 </form>
+         <input type="submit" value="Apply" id="btnapply" class="w3-btn w3-ripple w3-hover-red w3-margin-top"></input>
+         		 </form>
          </div>
          </center>
      </div>

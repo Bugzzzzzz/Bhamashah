@@ -24,7 +24,7 @@
         <center>
         <div class="w3-display-middle">
          <b class=""><h2><b> ENTER THE DETAILS</b></h2></b>
-		 <form class="tracer">
+		 <form class="tracer" action="trainer_user.php" method="POST">
          <table>
              <tr>
                  <td>BHAMASHAH ID</td>
@@ -48,7 +48,7 @@
              </tr>
              
          </table>
-         <input type="submit" value="Apply" id="btnapply" class="w3-btn w3-ripple w3-hover-red w3-margin-top"><a href="trainer_user.php></a></input>
+         <input type="submit" value="Apply" id="btnapply" class="w3-btn w3-ripple w3-hover-red w3-margin-top"><a href="trainer_user.php"></a></input>
 		 </form>
          </div>
          </center>
