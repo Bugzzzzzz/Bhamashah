@@ -97,7 +97,7 @@
 					 
                    <h3 style="margin-right:60%;"><B>APPLY FOR LOAN</B></h3>
                     <div class="learn" style="margin-right:60%;width:40%;float:right;">
-                  <p> &nbsp &nbsp   <button class="loan"  style="margin-right:50%;width:50%;float:right;background-color:black"> <a href="loan.php"> Click for loan </a></button></p> <br>
+                  <p> &nbsp &nbsp   <button class="loan"  style="margin-right:50%;width:50%;float:right;background-color:black"> <a href="loan1.php"> Click for loan </a></button></p> <br>
                     </div>
                 </div>
                 </div>
