@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 08, 2018 at 01:47 AM
+-- Generation Time: Jul 08, 2018 at 01:57 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -108,7 +108,7 @@ CREATE TABLE `trainer` (
   `BAC` varchar(20) NOT NULL,
   `Aadhar` varchar(12) NOT NULL,
   `Username` varchar(25) NOT NULL,
-  `Password` int(30) NOT NULL,
+  `Password` varchar(30) NOT NULL,
   `Comp` tinyint(1) NOT NULL,
   `Apply` tinyint(1) NOT NULL,
   `Amount` int(11) NOT NULL,
@@ -120,8 +120,8 @@ CREATE TABLE `trainer` (
 --
 
 INSERT INTO `trainer` (`Id`, `Name`, `PhoneNo`, `DOB`, `CAddress`, `PAddress`, `BAC`, `Aadhar`, `Username`, `Password`, `Comp`, `Apply`, `Amount`, `DateCreated`) VALUES
-(9, 'a', 2147483647, '2018-07-06', 'a', 'a', '9876549874', '9876549874', 'a', 0, 1, 1, 39999, '2018-07-07 22:20:28'),
-(10, 'k', 2147483647, '2018-07-27', 'a', 'a', '9876549874', '987654321654', 'AA', 0, 0, 0, 0, '2018-07-07 22:23:35');
+(9, 'a', 2147483647, '2018-07-06', 'a', 'a', '9876549874', '9876549874', 'a', '0', 1, 1, 39999, '2018-07-07 22:20:28'),
+(10, 'k', 2147483647, '2018-07-27', 'a', 'a', '9876549874', '987654321654', 'AA', '0', 0, 0, 0, '2018-07-07 22:23:35');
 
 -- --------------------------------------------------------
 
